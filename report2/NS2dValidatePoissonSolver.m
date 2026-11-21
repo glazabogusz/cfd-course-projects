@@ -1,20 +1,3 @@
-%% *****************************************************************************
-% File: NS2dValidatePoissonSolver.m
-%   Script for validating the implemented function for assembling the Laplacian
-%   operator matrix and the solution of the Poisson problem for a 
-%   translating lid flow in square cavity described by the nondimensional 
-%   incompressible unsteady 2D Navier-Stokes equations.
-%   Finite Volume Method on staggered Cartesian mesh with uniform square cells.
-%   Central difference scheme (CDS) applied throughout the model (convective
-%   and diffusive fluxes, gradient, divergence and Laplace operator).
-%   P-expression for exact pressure:
-%        P  = cos(k*Xp).*cos(k*Yp);
-%   H1- and H2 test functions
-%        H1 = -k*sin(k*Xu).*cos(k*Yu);
-%        H2 = -k*cos(k*Xv).*sin(k*Yv);
-%   defined at the velocity cell centers, which can be used for a convergence 
-%   study -- confirm that you are obtaining the expected rate of convergence.
-%
 % Input   :
 %   Nvec  :  Vector with number of cells in x,y, 
 %               e.g. Nvec = [11 21 41 81 161 321];
@@ -22,11 +5,6 @@
 %
 % Output  :
 %   Plot of convergence of truncation errors for pressure 
-%
-%   Author    : <<author>>
-%   Date      : <<date>>
-%   Version   : <<version#>>
-%*******************************************************************************
 
 %% Clear
 clear all

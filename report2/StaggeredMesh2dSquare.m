@@ -1,8 +1,4 @@
 function [dx,Xu,Yu,Xv,Yv,Xp,Yp,Xi,Yi] = StaggeredMesh2dSquare(n)
-%% *****************************************************************************
-% File: StaggeredMesh2dSquare.m
-%   Function for assembling coordinate arrays for a staggered mesh on a 2D square
-%   
 % Syntax:
 %   [dx,Xu,Yu,Xv,Yv,Xp,Yp,Xi,Yi] = StaggeredMesh2dSquare(n)
 %
@@ -16,11 +12,6 @@ function [dx,Xu,Yu,Xv,Yv,Xp,Yp,Xi,Yi] = StaggeredMesh2dSquare(n)
 %   Xp,Yp      :  Coord. arrays for p-grid,  Xp(1:n,1:n),      Yp(1:n,1:n)
 %   Xi,Yi,     :  Coord. arrays for fd-grid, Xi(1:n+1,1:n+1),  Yi(1:n+1,1:n+1)
 %   Plot of mesh arrangment for n < 12
-%
-% Author  : HBB/TOBC
-% Date    : September 31, 2011
-% Version : 1.0
-%*******************************************************************************
 
 %% Assemble mesh coordinate arrays
 dx      = 1/n;                  % cell size in x,y

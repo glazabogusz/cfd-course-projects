@@ -1,21 +1,3 @@
-%% *****************************************************************************
-% File: NS2dValidateHfunction.m
-%   Script for validation of implemented function for computation of H1- and H2-
-%   functions, for simulation of translating lid flow in square cavity described
-%   by nondimensional incompressible unsteady 2D Navier-Stokes equations.
-%   Finite Volume Method on staggered cartesian mesh with uniform square cells.
-%   Central difference scheme (CDS) applied throughout the model (convective
-%   and diffusive fluxes, gradient, divergence and Laplace operator).
-%   H1- and H2-expressions:
-%        H1 = 1/dx*(1/Re*dudx-u*u)|_w^e + 1/dy*(1/Re*dudy-u*v)|_s^n
-%        H2 = 1/dx*(1/Re*dvdx-u*v)|_w^e + 1/dy*(1/Re*dvdy-v*v)|_s^n
-%   Test functions for u,v:
-%        u  = sin(2*pi*Xu).*sin(2*pi*Yu);
-%        v  = sin(2*pi*Xv).*sin(2*pi*Yv);
-%   yields expressions for H1,H2, defined in the velocity cell centers, which
-%   can be used for a convergence study -- confirm that you obtain the
-%   expected rate of convergence.
-%
 % Input   :
 %   Nvec  :  Vector with number of cells in x,y, 
 %            e.g. Nvec = [11 21 41 81 161 321 641];
@@ -24,11 +6,6 @@
 %
 % Output  :
 %   Plot of convergence of truncation errors for H1- and H2-functions
-%
-%   Author      : <<author>>
-%   Date        : <<date>>
-%   Version     : <<version#>>
-%*******************************************************************************
 
 %% Clear
 clear all

@@ -1,19 +1,3 @@
-%% << Function for computation of Laplacian matrix A >>
-% << Implement as script -- then turn into function >>
-% << Benchmarks for development: >>
-% <<  - A should be symmetric,  A-A'        =>   All zero sparse: n^2-by-n^2
-% <<  - A should be singular, rank(full(A)) =>   n^2-1
-
-
-% function [A] = NS2dLaplaceMatrix(n)
-% *****************************************************************************
-% NS2dLaplaceMatrix:
-%   Assembles 2D Laplacian operator matrix with pure Neumann boundary conditions
-%   for a structured cartesian, cell centered (finite volume) mesh with n square
-%   cells in x,y of size dx. 2nd order CDS applied for the Laplace operator,
-%   which is scaled with a factor $dx^2$, which thus should be multiplied on the
-%   rhs-vector too.
-% 
 % Syntax:
 %   [A] = NS2dLaplaceMatrix(n)
 %
@@ -22,11 +6,6 @@
 %
 % Output :
 %   A    :  Laplacian operator matrix, A(1:n^2,1:n^2)
-%
-%   Author      : <<author>>
-%   Date        : <<date>>
-%   Version     : <<version#>>
-%*******************************************************************************
 
 %% Assemble Laplacian operator matrix
 % << implement the Laplacian matrix with homogeneous Neumann boundary >>

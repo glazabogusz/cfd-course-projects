@@ -1,15 +1,3 @@
-%% *****************************************************************************
-% File: NavierStokes2dMovingLidSquareCavityFlow.m
-%   Script for simulation of translating lid flow in square cavity described by 
-%   incompressible unsteady 2D Navier-Stokes equations in nondimensional form.
-%   Finite Volume Method on staggered cartesian mesh with uniform square cells. 
-%   Central difference scheme (CDS) applied throughout the model (convective
-%   and diffusive fluxes, gradient, divergence and Laplace operator). 
-%   NS equations integrated in time using the explicit Euler method.
-%   SIMPLE scheme used to derive Poisson equation for pressure. Solved directly 
-%   by LU-factorizing Laplacian matrix before time-stepping, then forward- and 
-%   backward-substituting using Matlab's backslash operator in each time step.  
-%
 % Input        :
 %   n          :  Number of cells along x,y-axis
 %   Re         :  Global Reynolds number number
@@ -36,11 +24,6 @@
 %   Plots of   :  i) velocity field streamlines, ii) pressure field contours. 
 %                 iii) gmchist and steadyhist
 %   Results written to file 'NS2d_Re<>_n<>.mat'
-%
-%   Author      : <<author>>
-%   Date        : <<date>>
-%   Version     : <<version#>>
-%*******************************************************************************
 
 %% Clear
 clear all

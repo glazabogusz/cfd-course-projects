@@ -1,23 +1,3 @@
-%% *****************************************************************************
-% File: FiniteVolumeConvectionDiffusion2D_UDS_pe.m
-%   Script for simulation of steady convection-diffusion heat problem on two-
-%   dimensional square domain using the Finite Volume Method on a cartesian,
-%   structured mesh with square cells. Central difference fluxes applied for
-%   the diffusive terms, and either central or upwinded difference fluxes
-%   applied for the convective terms.
-%   Implementation does not include source terms and is limited to the
-%   following two sets of convective velocity fields and boundary conditions:
-%     1) uniform flow [u,v] = [1,0], homogeneous Neumann BC. at north and south
-%     walls (dTn/dy=dTs/dy=0), homogeneous Dirichlet BC at west wall (Tw=0),
-%     inhomogeneous Dirichlet BC at east wall (Te=1).
-%     2) corner flow [u,v] = [-x,y], homogeneous Neumann BC. at north wall
-%     (dTn/dy=0), homogeneous Dirichlet BC at west wall (Tw=0), inhomogeneous
-%     Dirichlet BC at east wall (Te=1), inhomogeneous Dirichlet BC
-%     at south wall (Ts=x)
-%   Linear system of equations solved either directly using Matlab's backslash
-%   operator, or iteratively using either Jacobi, Gauss-Seidel, or SOR stationary
-%   iterative methods.
-%
 % Input         :
 %   n           :  Number of cells along x,y-axis
 %   L           :  Size of square in x,y-direction
@@ -35,11 +15,6 @@
 %   GHC         :   Global heat conservation, scalar (computed from wall fluxes)
 %   solve_time  :   CPU-time for solving system of linear equations A*T(:)=s(:)
 %   Plots of the temperature field and convective velocity field
-%
-% Author        : <<author>>
-% Date          : <<date>>
-% Version       : <<version#>>
-%*******************************************************************************
 
 %% Clear
 clear all      % Clears all variables from workspace

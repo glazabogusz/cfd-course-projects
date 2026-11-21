@@ -1,17 +1,3 @@
-%% ******************************************************************************
-% File: FiniteVolumeConvectionDiffusion1D.m
-%   Script for simulation of steady convection-diffusion heat problem on one-
-%   dimensional using the Finite Volume Method Central difference fluxes applied
-%   for the diffusive terms, and either central of upwinded difference fluxes
-%   applied for the convective terms. Implementation does not include source
-%   terms and is limited to a uniform convective velocity u = 1 and the 
-%   following two sets of boundary conditions at x = 0 and x = L:
-%     1) homogeneous Dirichlet BC at west wall (Ta = 0), 
-%        inhomogeneous Dirichlet BC at east wall (Tb = 1)
-%     2) homogeneous Dirichlet BC at west wall (Tw = 0), 
-%        inhomogeneous Neuman BC at east wall (Db = 1)
-%   Linear system of equations solved directly using Matlab's backslash operator
-%
 % Input         :
 %   n           :  Number of cells along x,y-axis
 %   L           :  Size of square in x,y-direction
@@ -29,11 +15,6 @@
 %   GHC         :   Global heat conservation, scalar (computed from wall fluxes)
 %   solve_time  :   CPU-time for solving system of linear equations A*T(:)=s(:)
 %   Plots of the temperature field etc.
-%
-%   Author      : <<author>>
-%   Date        : <<date>>
-%   Version     : <<version#>>
-%*******************************************************************************
 
 %% Clear
 clear all

@@ -1,17 +1,3 @@
-%% *****************************************************************************
-% File: NS2dRe1000ConvergenceAnalysis.m
-%   Driver for analysis of convergence of velocity and pressure profiles in 
-%   centerlines to benchmark results from Bruneau & Saad [2006]. Results obtained 
-%   for simulation of translating lid flow in square cavity described by 
-%   incompressible unsteady 2D Navier-Stokes equations in nondimensional form.
-%   Finite Volume Method on staggered Cartesian mesh with uniform square cells.
-%   Central difference scheme (CDS) applied throughout the model (convective
-%   and diffusive fluxes, gradient, divergence and Laplace operator).
-%   NS equations integrated in time using explicit Euler time stepping.
-%   SIMPLE scheme used to derive Poisson equation for pressure. Solved directly
-%   by LU-factorizing Laplacian matrix before time-stepping, then forward- and
-%   backward-substituting using Matlab's backslash operator in each time step.
-%
 % Input        :
 %   Nvec       :  Vector with number of cells along x,y-axis,
 %                   e.g. Nvec = [11 21 41 81 161];
@@ -21,11 +7,6 @@
 % Output       :
 %   Plots:        i)  plot of velocity and pressure profiles in centerlines, 
 %                 ii) plot of max errors, including convergence rates
-%
-%   Author      : <<author>>
-%   Date        : <<date>>
-%   Version     : <<version#>>
-%*******************************************************************************
 
 %% Clear
 clear all
