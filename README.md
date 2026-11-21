@@ -1,12 +1,11 @@
 # Computational Fluid Dynamics – course projects in MATLAB
 
-Code from two assignments in the course 41317 Computational Fluid Dynamics at the Technical University of Denmark.
+Giovanni Girardi and I took 41317 Computational Fluid Dynamics at DTU in spring 2025, and it became one of my favourite courses during my studies. It was satisfying to write the code from scratch and to understand the principles behind the commercial CFD software I had used in other courses, in both my Bachelor’s and my Master’s. We put a lot of work into the two assignments, and both received the highest grade. A summary of both projects, with figures and the calculations explained, is in [CFD_Project_Summary.pdf](CFD_Project_Summary.pdf).
+
 
 Original assignments: Bogusz Glaza and Giovanni Girardi, spring 2025.
 
 Summary and code cleanup: Bogusz Glaza, November 2026.
-
-A summary of both projects, with figures and the calculations explained, is in [CFD_Project_Summary.pdf](CFD_Project_Summary.pdf).
 
 The solvers are written from scratch, starting from the conservation laws, and every part was checked against exact solutions or a benchmark.
 
