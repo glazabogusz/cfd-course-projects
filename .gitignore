@@ -1,0 +1,8 @@
+plots/*
+!plots/.gitkeep
+*.mat
+*.eps
+*.png
+*.asv
+.DS_Store
+.vscode/
